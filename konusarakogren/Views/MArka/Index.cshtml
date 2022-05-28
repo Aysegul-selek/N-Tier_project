@@ -1,0 +1,19 @@
+﻿@using EntityLayer.Concreate
+@model List<Marka>
+
+@{
+    Layout = null;
+}
+
+<table>
+    <tr><td> ID</td>
+  <td>  Marka Adı</td>
+  </tr>
+  @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.MarkaID</td>
+            <td>@item.MarkaAdi</td>
+        </tr>
+    }
+</table>
